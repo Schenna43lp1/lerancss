@@ -223,4 +223,28 @@ nav {
     margin: .5em;
     cursor: pointer;
 }
-
+@media only screen and(min-width: 768px){
+ .mobile-menu, .mobile-menu-exit{
+    display: none;
+ }
+ .navbar .container{
+    display: grid;
+    grid-template-columns: 180px auto;
+ }
+ .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+ }
+ ul{
+    display: flex;
+   
+ }
+ a{
+        color: black;
+    }
+}

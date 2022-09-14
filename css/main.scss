@@ -110,7 +110,7 @@ ul.features-list {
     padding: .1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-
+    
     li {
         font-size: 1.1em;
         margin-bottom: 1em;
@@ -239,12 +239,32 @@ nav {
     height: auto;
     width: 100%;
     padding: 0;
- }
- ul{
+
+    ul{
     display: flex;
    
- }
- a{
-        color: black;
     }
+    a{
+        color: black;
+        font-size: 1em;
+        padding: .1em 1em;
+    }
+    ul.primary-nav{
+        margin: 0;
+    }
+    li.current a{
+        font-weight: bold;
+    }
+    li.go-premium-cta a{
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        font-weight: bold;
+        border-radius: 5em;
+        margin-top: -.2em;
+        &:hover{
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
+ }
 }
